@@ -7,12 +7,9 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.logo-web {
   color: #4d5ae5;
 }
 
@@ -35,12 +32,13 @@ body {
   color: #404bbf;
 }
 /* контакты" */
-.contacts .link {
+.contacts .link-coms {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -70,13 +68,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   cursor: pointer;
 }
-.button .link:hover,
-.button .link:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+.button:hover,
+.button:focus {
   background-color: #404bbf;
 }
 /*о фирме  " */
@@ -118,14 +114,16 @@ body {
   color: #434455;
 }
 /*наше портфолио " */
-.title-our-portfolio .title {
+.title-our-portfolio .title-portf {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: #2e2f42;
 }
-.title-our-portfolio .text {
+.title-our-portfolio .text-of-services {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -144,9 +142,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.logo-web-footer {
   color: #4d5ae5;
 }
 
