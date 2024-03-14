@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
+  background-color: #ffffff;
 }
 /* лого" */
 .logo {
@@ -11,24 +12,28 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .logo-studio {
   color: #2e2f42;
 }
 /* навигация" */
-.page-nav .link {
+.page-nav .link-menu {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  font-style: normal;
+  text-decoration: none;
 }
-.page-nav .link:hover,
-.page-nav .link:focus {
+.page-nav .link-menu:hover,
+.page-nav .link-menu:focus {
   color: #404bbf;
 }
-.page-nav .link:active {
+.page-nav .link-menu:active {
   color: #404bbf;
 }
 /* контакты" */
@@ -38,13 +43,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-decoration: none;
   font-style: normal;
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts .link-coms:hover,
+.contacts .link-coms:focus {
   color: #404bbf;
 }
-.contacts .link:active {
+.contacts .link-coms:active {
   color: #404bbf;
 }
 /*Главная  " */
@@ -143,6 +149,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .logo-studio-footer {
