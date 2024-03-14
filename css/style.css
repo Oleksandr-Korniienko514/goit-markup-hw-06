@@ -126,7 +126,17 @@ body {
   color: #434455;
 }
 /*наше портфолио " */
-.title-our-portfolio .title-portf {
+.title-portfolio {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.our-portfolio .title-services {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -135,7 +145,7 @@ body {
   text-transform: capitalize;
   color: #2e2f42;
 }
-.title-our-portfolio .text-of-services {
+.our-portfolio .text-of-services {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
