@@ -40,7 +40,7 @@ body {
 .page-address {
   font-style: normal;
 }
-.contacts .link-coms {
+.link-coms {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -49,11 +49,11 @@ body {
   text-decoration: none;
   font-style: normal;
 }
-.contacts .link-coms:hover,
-.contacts .link-coms:focus {
+.page-address .link-coms:hover,
+.page-address .link-coms:focus {
   color: #404bbf;
 }
-.contacts .link-coms:active {
+.page-address .link-coms:active {
   color: #404bbf;
 }
 /*SECTION 1" */
@@ -141,7 +141,7 @@ body {
   color: #2e2f42;
   text-transform: capitalize;
 }
-.our-portfolio .title-services {
+.title-services {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -150,7 +150,7 @@ body {
   text-transform: capitalize;
   color: #2e2f42;
 }
-.our-portfolio .text-of-services {
+.text-of-services {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
