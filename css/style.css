@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: #fff;
+  color: #434455;
 }
 /* лого" */
 .logo {
@@ -106,7 +106,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.persons .text {
+.persons .job-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -116,8 +116,8 @@ body {
 /*наше портфолио " */
 .title-our-portfolio .title-portf {
   font-weight: 500;
-  font-size: 36px;
-  line-height: 1.11;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
