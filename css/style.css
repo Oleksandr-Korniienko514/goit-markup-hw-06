@@ -20,40 +20,43 @@ body {
   color: #2e2f42;
 }
 /* NAV" */
-.page-nav .link-menu {
+.page-nav {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  font-style: normal;
-  text-decoration: none;
 }
-.page-nav .link-menu:hover,
-.page-nav .link-menu:focus {
+
+.page-nav .link {
+  color: #2e2f42;
+}
+.page-nav .link:hover,
+.page-nav .link:focus {
   color: #404bbf;
 }
-.page-nav .link-menu:active {
+.link-menu:active {
   color: #404bbf;
 }
 /* ADDRESS" */
 .page-address {
-  font-style: normal;
-}
-.link-coms {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
-  text-decoration: none;
+
   font-style: normal;
 }
-.page-address .link-coms:hover,
-.page-address .link-coms:focus {
+
+.page-address .link {
+  color: #434455;
+}
+
+.page-address .link:hover,
+.page-address .link:focus {
   color: #404bbf;
 }
-.page-address .link-coms:active {
+.page-address.link:active {
   color: #404bbf;
 }
 /*SECTION 1" */
