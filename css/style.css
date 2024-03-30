@@ -3,8 +3,55 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
-/* LOGO AND NAV" */
-.logo {
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/*----------------- LOGO AND NAV" ----------------------*/
+.conteiner {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.header-nav {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
+.conteiner-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -14,52 +61,70 @@ body {
   color: #4d5ae5;
   text-decoration: none;
   font-style: normal;
+  margin-right: 76px;
 }
 
 .logo-studio {
   color: #2e2f42;
 }
-/* NAV" */
-.page-nav {
+/* ----------NAV----------------" */
+.navigation {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: block;
+  padding: 24px 0;
+  text-decoration: none;
+}
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 40px;
 }
 
-.page-nav .link {
+.navigation .menu-link {
   color: #2e2f42;
 }
-.page-nav .link:hover,
-.page-nav .link:focus {
+.navigation.menu-link:hover,
+.navigation .menu-link:focus {
   color: #404bbf;
 }
 .link-menu:active {
   color: #404bbf;
 }
-/* ADDRESS" */
-.page-address {
+/* -----------contacts"---------------- */
+.contacts {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
   font-style: normal;
+  display: block;
+}
+.contacts-ul {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.page-address .link {
+.contacts .contacts-link {
   color: #434455;
 }
 
-.page-address .link:hover,
-.page-address .link:focus {
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
   color: #404bbf;
 }
-.page-address.link:active {
+.contacts.contacts-link:active {
   color: #404bbf;
 }
-/*SECTION 1" */
+/*----------------- LOGO AND NAV" ----------------------*/
+
+/*-----------------------SECTION 1----------------------" */
+
 .title-main {
   font-weight: 700;
   font-size: 56px;
@@ -67,9 +132,14 @@ body {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  max-width: 496px;
+  margin: 0 auto 44px;
 }
-.main-color {
+.hero-title {
   background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
+  margin-bottom: 120px;
   /*BUTTON  " */
 }
 .button-order-service {
@@ -80,13 +150,53 @@ body {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
-  cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  gap: 10px;
 }
 .button-order-service:hover,
 .button-order-service:focus {
   background-color: #404bbf;
 }
-/*SECTION 2 About Company" */
+/*-----------------------SECTION 1----------------------" */
+
+/*----------------------------SECTION 2 About Company-----------------" */
+.hidden {
+  position: absolute;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.conteiner-company {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.company-promo {
+  width: calc((100% - 72px) / 4);
+}
 
 .about-company {
   font-weight: 500;
@@ -94,6 +204,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 .goal {
   font-weight: 400;
@@ -102,10 +214,22 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-/*SECTION 3 TEAM" */
+/*----------------------------SECTION 2 About Company-----------------" */
+
+/*---------------------------SECTION 3 TEAM"------------------------ */
 .team {
   color: #ffffff;
   background-color: #f4f4fd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.team-conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
 }
 .title-our-team {
   font-weight: 700;
@@ -114,7 +238,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-transform: capitalize;
+  padding: 120px 0;
 }
 .title-name {
   font-weight: 500;
@@ -122,6 +246,9 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 .text-job {
   font-weight: 400;
@@ -129,12 +256,21 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
+  gap: 32px;
 }
-.images {
+.images-team {
   background-color: #ffffff;
+  gap: 24px;
+  margin-bottom: 120px;
+  border-radius: 0 0 4px 4px;
 }
-/*SECTION 4 Our Portfolio  " */
+/*---------------------------SECTION 3 TEAM"------------------------ */
 
+/*-----------------SECTION 4 Our Portfolio-------------------- " */
+.portfolio-conteiner {
+  margin-bottom: 120px;
+}
 .title-portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -143,15 +279,31 @@ body {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding: 120px 0 72px;
 }
+.features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid #e7e9fc;
+  column-gap: 24px;
+  row-gap: 48px;
+  justify-content: center;
+}
+.images-features {
+  width: calc((100% - 48px) / 3);
+}
+
 .title-services {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-left: 16px;
+  margin-bottom: 8px;
 }
 .text-of-services {
   font-weight: 400;
@@ -159,10 +311,22 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
-/*FOOTER " */
+/*-----------------SECTION 4 Our Portfolio-------------------- " */
+
+/*------------------------FOOTER---------------------- " */
 .page-footer {
   background-color: #2e2f42;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 /*LOGO" */
 .logo-footer {
@@ -171,19 +335,22 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #4d5ae5;
-  font-style: normal;
-  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  margin-bottom: 16px;
 }
 
 .logo-studio-footer {
   color: #f4f4fd;
 }
-.page-footer .text-footer {
+.text-footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  display: flex;
 }
+/*------------------------FOOTER---------------------- " */
