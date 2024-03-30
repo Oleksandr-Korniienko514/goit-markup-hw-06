@@ -44,6 +44,8 @@ img {
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
+}
+.header-link {
   border-bottom: 1px solid #e7e9fc;
 }
 .conteiner-nav {
@@ -67,6 +69,9 @@ img {
 .logo-studio {
   color: #2e2f42;
 }
+.menu-link {
+  display: flex;
+}
 /* ----------NAV----------------" */
 .navigation {
   font-weight: 500;
@@ -77,8 +82,6 @@ img {
   display: block;
   padding: 24px 0;
   text-decoration: none;
-}
-.navigation {
   display: flex;
   list-style: none;
   gap: 40px;
@@ -139,7 +142,6 @@ img {
   background-color: #2e2f42;
   padding: 188px 0;
   text-align: center;
-  margin-bottom: 120px;
   /*BUTTON  " */
 }
 .button-order-service {
@@ -185,7 +187,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 
 .conteiner-company {
@@ -204,7 +206,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
+
   margin-bottom: 8px;
 }
 .goal {
@@ -224,12 +226,17 @@ img {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 120px 0;
+  gap: 24px;
 }
 .team-conteiner {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 24px;
+  margin-top: 72px;
+}
+.team-ittem-conteiner {
+  padding: 32px 0;
 }
 .title-our-team {
   font-weight: 700;
@@ -238,7 +245,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding: 120px 0;
+  margin-bottom: 72px;
 }
 .title-name {
   font-weight: 500;
@@ -246,8 +253,9 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-left: 16px;
+  background-color: #ffffff;
   text-align: center;
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 .text-job {
@@ -256,20 +264,23 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  background-color: #ffffff;
   text-align: center;
-  gap: 32px;
 }
 .images-team {
   background-color: #ffffff;
-  gap: 24px;
-  margin-bottom: 120px;
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 4px 4px;
 }
 /*---------------------------SECTION 3 TEAM"------------------------ */
 
 /*-----------------SECTION 4 Our Portfolio-------------------- " */
 .portfolio-conteiner {
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 .title-portfolio {
   font-weight: 700;
@@ -279,19 +290,22 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding: 120px 0 72px;
+  margin-bottom: 72px;
 }
 .features {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid #e7e9fc;
   column-gap: 24px;
   row-gap: 48px;
   justify-content: center;
 }
 .images-features {
   width: calc((100% - 48px) / 3);
+}
+.features-portfoli-conteiner {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .title-services {
@@ -301,18 +315,14 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 .text-of-services {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  text-align: left;
 }
 /*-----------------SECTION 4 Our Portfolio-------------------- " */
 
@@ -337,7 +347,7 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  display: flex;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -351,6 +361,5 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-  display: flex;
 }
 /*------------------------FOOTER---------------------- " */
