@@ -31,6 +31,7 @@ address {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 /*----------------- LOGO AND NAV" ----------------------*/
 .container {
@@ -127,7 +128,12 @@ img {
 /*----------------- LOGO AND NAV" ----------------------*/
 
 /*-----------------------SECTION 1----------------------" */
-
+.hero-title {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
+  /*BUTTON  " */
+}
 .title-main {
   font-weight: 700;
   font-size: 56px;
@@ -138,12 +144,7 @@ img {
   max-width: 496px;
   margin: 0 auto 44px;
 }
-.hero-title {
-  background-color: #2e2f42;
-  padding: 188px 0;
-  text-align: center;
-  /*BUTTON  " */
-}
+
 .button-order-service {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -169,6 +170,12 @@ img {
 /*-----------------------SECTION 1----------------------" */
 
 /*----------------------------SECTION 2 About Company-----------------" */
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 120px 0;
+}
 .hidden {
   position: absolute;
   position: absolute;
@@ -181,13 +188,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 120px 0;
 }
 
 .container-company {
@@ -217,7 +217,6 @@ img {
   color: #434455;
 }
 /*----------------------------SECTION 2 About Company-----------------" */
-
 /*---------------------------SECTION 3 TEAM"------------------------ */
 .team {
   color: #ffffff;
@@ -229,15 +228,6 @@ img {
   padding: 120px 0;
   gap: 24px;
 }
-.team-container {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 72px;
-}
-.team-ittem-container {
-  padding: 32px 0;
-}
 .title-our-team {
   font-weight: 700;
   font-size: 36px;
@@ -246,6 +236,22 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
+}
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.images-team {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-ittem-container {
+  padding: 32px 0;
 }
 .title-name {
   font-weight: 500;
@@ -269,12 +275,6 @@ img {
   padding-bottom: 32px;
   background-color: #ffffff;
   text-align: center;
-}
-.images-team {
-  background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 4px 4px;
 }
 /*---------------------------SECTION 3 TEAM"------------------------ */
 
@@ -329,7 +329,6 @@ img {
 /*------------------------FOOTER---------------------- " */
 .page-footer {
   background-color: #2e2f42;
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -340,7 +339,6 @@ img {
 }
 /*LOGO" */
 .logo-footer {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
