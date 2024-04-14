@@ -33,6 +33,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*----------------- LOGO AND NAV" ----------------------*/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -496,6 +508,7 @@ img {
 }
 .icon-list-fotter {
   gap: 16px;
+  margin-right: 80px;
 }
 .icon-item-fotter {
   width: 40px;
@@ -518,3 +531,310 @@ img {
 .icon-link-fot:focus {
   background-color: #31d0aa;
 }
+/* ---------------FOOTER EMAIL+BUTTON----------------------------------- */
+
+.modal-input-footter {
+}
+.iput-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-label {
+  display: block;
+}
+.form-footter {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding-left: 16px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  outline: transparent;
+}
+.form-footter::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.footer-button-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 16px;
+}
+.footer-button-input:hover,
+.footer-button-input:focus {
+  background-color: #404bbf;
+}
+.footer-button-icon {
+  fill: #fff;
+}
+/* ---------------FOOTER EMAIL+BUTTON----------------------------------- */
+
+/* ------------------------------modal-overlay------------------------------ */
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+  visibility: visible;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+/* ------------------------------modal-overlay------------------------------ */
+
+/* ------------------------------modal------------------------------- */
+.modal {
+  width: 408px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 72px 24px 24px 24px;
+}
+/* ------------------------------modal------------------------------- */
+
+/* ------------------------------button-modal-x ------------------------------- */
+.button-modal-x {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-modal-x:hover,
+.button-modal-x:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-icom-close {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal-x.modal-icon-close:hover,
+.button-modal-x.modal-icom-close:focus {
+  fill: #fff;
+}
+
+/* ------------------------------button-modal-x ------------------------------- */
+
+/* ------------------------------taitle-modal ------------------------------- */
+.taitle-modal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+  max-width: 360;
+  margin-bottom: 16px;
+}
+
+/* ------------------------------taitle-modal ------------------------------- */
+
+/* ------------------------------modal-form tel name em ------------------------------- */
+.modal-form {
+  border-radius: none;
+}
+.modal-input-wrap {
+  margin-bottom: 8px;
+}
+.input-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+  display: block;
+}
+.form-input {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  height: 40px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+.form-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+.modal-wrap {
+  position: relative;
+}
+.modal-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ------------------------------modal-form tel name em ------------------------------- */
+
+/* ------------------------------modal-comment ------------------------------- */
+.modal-comment {
+  margin-bottom: 16px;
+}
+.form-comment {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  height: 120px;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+}
+
+.form-comment:focus {
+  border-color: #4d5ae5;
+}
+
+.form-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+/* ------------------------------modal-comment ------------------------------- */
+
+/* -------------------------------------------checkbox------------------------ */
+.check-privacy {
+  margin-bottom: 24px;
+}
+
+.modal-privacy {
+}
+
+.check-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-item {
+  margin-right: 8px;
+  border-radius: 2px;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-privacy:checked + .check-label .modal-item {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.check-label .check-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+/* -------------------------------------------checkbox------------------------ */
+
+/* -----------------------------------submit----------------------------------- */
+.button-submit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #404bbf;
+}
+/* -----------------------------------submit----------------------------------- */
