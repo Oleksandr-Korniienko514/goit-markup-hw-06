@@ -320,7 +320,8 @@ img {
 }
 
 .team-ittem-container {
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .title-name {
   font-weight: 500;
@@ -328,8 +329,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-left: 16px;
-  background-color: #ffffff;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -339,10 +338,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-bottom: 32px;
-  background-color: #ffffff;
+  margin-bottom: 8px;
   text-align: center;
 }
 .icon-list {
