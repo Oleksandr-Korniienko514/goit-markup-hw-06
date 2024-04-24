@@ -56,10 +56,10 @@ img {
   align-items: center;
 }
 .container {
-  /* width: 1158px; */
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .container-nav {
   display: flex;
@@ -180,13 +180,25 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 320px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   /*BUTTON  " */
+}
+@media screen and (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .hero-title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mob-2x.jpg);
+  }
 }
 .title-main {
   font-weight: 700;
@@ -228,7 +240,8 @@ img {
 .wrap {
   display: flex;
   flex-wrap: wrap;
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .hidden {
   position: absolute;
@@ -390,7 +403,6 @@ img {
 .features {
   display: flex;
   flex-direction: column;
-
   column-gap: 24px;
   row-gap: 48px;
   justify-content: center;
@@ -793,9 +805,6 @@ img {
   margin-bottom: 24px;
 }
 
-.modal-privacy {
-}
-
 .check-label {
   font-weight: 400;
   font-size: 12px;
@@ -861,15 +870,33 @@ img {
 /* -----------------------------------submit----------------------------------- */
 
 /* ----------tablet--------- */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 
   /* ---------------------------hero--------tablet---------------- */
   .hero-title {
     padding: 112px 0;
     max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .hero-title {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-2x.jpg);
+    }
   }
 
   .title-main {
@@ -882,8 +909,6 @@ img {
 
   /* ------------------SECTION 2 About Company--------tablet------------ */
 
-  .wrap {
-  }
   .container-company {
     flex-direction: row;
     flex-wrap: wrap;
@@ -898,7 +923,13 @@ img {
   /* -------SECTION 2 About Company----tablet------- */
   /*---------------------------SECTION 3 TEAM"----tablet-------------------- */
   .team > .container {
-    padding: 0 108px;
+    padding-left: 108px;
+    padding-right: 108px;
+    max-width: 584px;
+  }
+  .team {
+    /* flex-direction: row;
+    justify-content: center; */
   }
   .team-container {
     flex-direction: row;
@@ -906,7 +937,6 @@ img {
     gap: 64px 24px;
   }
   .images-team {
-    width: calc((100% - 24px) / 2);
   }
 
   /*-----------------SECTION 4 Our Portfolio-------tablet------------- " */
@@ -916,10 +946,9 @@ img {
     row-gap: 72px;
   }
   .images-features {
-    width: calc((100% - 24px) / 2);
   }
   /* <!-- ------------------footer-------tablet------- --> */
-  .page-footer {
+  .page-footer > .container {
     padding-left: 108px;
   }
 
@@ -953,15 +982,34 @@ img {
 
 /* ---------------------------hero------------komp------------ */
 
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .hero-title {
     padding: 188px 0;
     max-width: 1440px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office\ .jpg);
   }
-
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .hero-title {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x\ .jpg);
+    }
+  }
   .title-main {
     margin: 0 auto 48px;
   }
@@ -1007,11 +1055,10 @@ img {
 
   /* <!-- ---------------------SECTION 3 TEAM----------komp----------------- */
   .team > .container {
-    padding: 0 16px;
+    padding: 0 15px;
+    max-width: 1158px;
   }
   .team {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 120px 0;
   }
   .team-container {
@@ -1020,12 +1067,11 @@ img {
     flex-wrap: nowrap;
   }
   .images-team {
-    width: calc((100% - 72px) / 4);
   }
 
   /*-----------------SECTION 4 Our Portfolio------komp-------------- " */
   .portfolio-container {
-    padding: 120px;
+    padding: 120px 0;
   }
   .features {
     row-gap: 48px;
@@ -1035,11 +1081,13 @@ img {
   }
   /* <!-- --------------------footer------komp------------ --> */
   .page-footer {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .page-footer .container {
     flex-wrap: nowrap;
     gap: 0;
+    padding: 0 15px;
   }
   .container-fotter {
     margin-right: 120px;
